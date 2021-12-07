@@ -7,7 +7,7 @@ import Services from "./component/pages/services";
 import News from "./component/pages/news";
 import Contact from "./component/pages/contact/contact";
 import Home from "./component/pages/home/index";
-
+import Footer from "./component/footer/footer";
 function App() {
   return (
     <React.Fragment>
@@ -23,6 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </React.Fragment>
   );

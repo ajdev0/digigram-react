@@ -9,6 +9,8 @@ import SiteStatics from "./siteStatics";
 import Carousel from "./carousel";
 import Contact from "../contact/contact";
 import FeatureBlogs from "../../blog/featureBlogs";
+import Clients from "../../common/clients";
+import Footer from "../../footer/footer";
 
 function Home() {
   return (
@@ -24,6 +26,7 @@ function Home() {
         <Carousel />
         <Contact />
         <FeatureBlogs />
+        <Clients />
       </main>
     </div>
   );

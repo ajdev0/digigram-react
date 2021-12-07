@@ -3,16 +3,16 @@ import Post from "./post";
 
 function FeatureBlogs() {
   return (
-    <div class="page-section border-top">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <div class="subhead">Our Blog</div>
-          <h2 class="title-section">
-            Read our latest <span class="marked">News</span>
+    <div className="page-section border-top">
+      <div className="container">
+        <div className="text-center wow fadeInUp">
+          <div className="subhead">Our Blog</div>
+          <h2 className="title-section">
+            Read our latest <span className="marked">News</span>
           </h2>
-          <div class="divider mx-auto"></div>
+          <div className="divider mx-auto"></div>
         </div>
-        <div class="row my-5 card-blog-row">
+        <div className="row my-5 card-blog-row">
           <Post
             author="Sam Newman"
             publishDate="23 Apr 2020"
@@ -39,6 +39,11 @@ function FeatureBlogs() {
             postTitle="What is Business Management?"
             postExcerpt="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
           />
+        </div>
+        <div className="text-center">
+          <a href="blog.html" className="btn btn-outline-primary rounded-pill">
+            Discover More
+          </a>
         </div>
       </div>
     </div>
