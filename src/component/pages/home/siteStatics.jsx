@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 class SiteStatics extends React.Component {
   state = {
     invest: 816278,

@@ -5,7 +5,7 @@ import Navbar from "./component/navBar";
 import About from "./component/pages/about";
 import Services from "./component/pages/services";
 import News from "./component/pages/news";
-import Contact from "./component/pages/contact";
+import Contact from "./component/pages/contact/contact";
 import Home from "./component/pages/home/index";
 
 function App() {
