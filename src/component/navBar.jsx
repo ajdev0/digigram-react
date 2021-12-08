@@ -1,13 +1,21 @@
 import React from "react";
 import Button from "../component/common/button.jsx";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  let navClass = ["navbar-float", "shadow-sm"];
+  if (location.pathname === "/") {
+    navClass = navClass[0];
+  } else {
+    navClass = navClass[1];
+  }
+
   let activ = "nav-link ";
   activ += ({ isActive }) => (isActive ? "active" : "");
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light navbar-float">
+      <nav className={`navbar navbar-expand-lg navbar-light ${navClass}`}>
         <div className="container">
           <Link to="/" className="navbar-brand">
             Digi<span className="text-primary">Gram.</span>

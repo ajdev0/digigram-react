@@ -10,9 +10,9 @@ class ConactForm extends Form {
         <div class="divider"></div>
 
         <form action="#">
-          {this.renderInput("text", "Full name")}
-          {this.renderInput("text", "Email")}
-          {this.renderTextarea(6, "Enter message")}
+          <div className="py-2">{this.renderInput("text", "Full name")}</div>
+          <div className="py-2">{this.renderInput("text", "Email")}</div>
+          <div className="py-2">{this.renderTextarea(6, "Enter message")}</div>
           {this.renderButton("Send Message")}
         </form>
       </div>

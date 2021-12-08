@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 class Form extends Component {
   state = {};
-  renderInput(type = "text", placeholder) {
+  renderInput(type = "text", placeholder, label) {
     return (
-      <div className="py-2">
+      <div>
+        {label && (
+          <label for={label}>
+            {label.charAt(0).toUpperCase() + label.slice(1)}
+          </label>
+        )}
         <input type={type} className="form-control" placeholder={placeholder} />
       </div>
     );
   }
   renderTextarea(rows, placeholder) {
     return (
-      <div className="py-2">
+      <div>
         <textarea
           rows={rows}
           className="form-control"

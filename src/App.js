@@ -5,9 +5,10 @@ import Navbar from "./component/navBar";
 import About from "./component/pages/about";
 import Services from "./component/pages/services";
 import News from "./component/pages/news";
-import Contact from "./component/pages/contact/contact";
+import Contact from "./component/pages/contact/contacPage";
 import Home from "./component/pages/home/index";
 import Footer from "./component/footer/footer";
+import BlogSingle from "./component/blog/blogSingle";
 function App() {
   return (
     <React.Fragment>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<News />} />
+            <Route path="/blog-single" element={<BlogSingle />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

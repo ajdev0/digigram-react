@@ -21,9 +21,7 @@ function SectionOne() {
               looking for partner for their digital media, design & dev lead
               generation & communication.
             </p>
-            <div className="img-place mb-3">
-              <img src="assets/img/testi_image.png" alt="" />
-            </div>
+
             <a href="#" className="btn btn-primary">
               More Details
             </a>

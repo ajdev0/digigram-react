@@ -1,32 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Post({ author, authorImg, publishDate, postTitle, postExcerpt }) {
+  const location = useLocation();
+  let postClass = ["col-lg-3 py-3 wow fadeInUp", "col-lg-4 py-3"];
+  if (location.pathname == "/blog") {
+    postClass = postClass[1];
+  } else {
+    postClass = postClass[0];
+  }
   return (
-    <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-      <div class="card-blog">
-        <div class="header">
+    <div className={`col-md-6 ${postClass}`}>
+      <div className="card-blog">
+        <div className="header">
           {authorImg && (
-            <div class="avatar">
+            <div className="avatar">
               <img src={authorImg} alt="" />
             </div>
           )}
-          <div class="entry-footer">
-            <div class="post-author">{author}</div>
-            <Link to="" class="post-date">
+          <div className="entry-footer">
+            <div className="post-author">{author}</div>
+            <Link to="" className="post-date">
               {publishDate}
             </Link>
           </div>
         </div>
-        <div class="body">
-          <div class="post-title">
+        <div className="body">
+          <div className="post-title">
             <Link to="/blog-single">{postTitle}</Link>
           </div>
-          <div class="post-excerpt">{postExcerpt}</div>
+          <div className="post-excerpt">{postExcerpt}</div>
         </div>
-        <div class="footer">
+        <div className="footer">
           <Link to="/blog-single">
-            Read More <span class="mai-chevron-forward text-sm"></span>
+            Read More <span className="mai-chevron-forward text-sm"></span>
           </Link>
         </div>
       </div>
