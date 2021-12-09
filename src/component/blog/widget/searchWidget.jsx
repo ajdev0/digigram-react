@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "../common/form";
+import Form from "../../common/form";
 
 class SearchWidget extends Form {
   render() {
     return (
-      <div>
+      <div class="widget-box">
         <form action="#" class="search-widget">
           {this.renderInput("text", "Enter Keyword...")}
           {this.renderButton("Search")}

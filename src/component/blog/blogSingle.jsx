@@ -1,7 +1,7 @@
 import React from "react";
 import CommentForm from "./commentForm";
 import PostContent from "./postContent";
-import Widget from "./widget";
+import Widget from "./widget/widget";
 
 function BlogSingle() {
   return (
