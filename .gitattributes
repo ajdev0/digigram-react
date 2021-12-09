@@ -1,0 +1,3 @@
+vi .gitattributes
+documented_code.rb linguist-documentation=true
+*.rb linguist-language=React
